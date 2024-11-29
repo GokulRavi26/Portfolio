@@ -126,6 +126,7 @@ header {
     width: 300px;
     transition: transform 0.3s;
     padding: 20px; 
+    text-align: justify;
 }
 
 .project img {
