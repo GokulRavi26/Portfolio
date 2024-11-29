@@ -115,10 +115,6 @@ header {
 }
 
 .project {
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
-    align-items: center;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -126,8 +122,9 @@ header {
     width: 300px;
     transition: transform 0.3s;
     padding: 20px; 
-    text-align: justify;
+    text-align: justify; 
 }
+
 
 .project img {
     width: 100%;
