@@ -38,7 +38,9 @@
             Explore My Work
             <i class="fas fa-arrow-right"></i> <!-- Icon added here -->
         </a>
-        <div>
+       <div class="social-links">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
             <a href="https://github.com/GokulRavi26/" target="_blank" class="social-icon" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
@@ -46,7 +48,7 @@
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://drive.google.com/file/d/1c3u9aafZ1fo9TBuaEP5WpFR5sJu8TkMr/view?usp=sharing" target="_blank" class="social-icon" title="Resume">
-                 Download CV
+                Download CV
                 <i class="fas fa-file-alt"></i> <!-- Icon added for resume -->
             </a>
         </div>
@@ -143,6 +145,27 @@
   height: 60PX;
 }
 
+.social-links .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px; /* Adjust the size of icons */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0077b5; /* Color change on hover, adjust as needed */
+}
+
+.cta-btn i {
+    margin-left: 10px; /* Space between text and icon */
+    font-size: 18px; /* Adjust icon size */
+}
 
 </style>
 
