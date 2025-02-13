@@ -16,44 +16,28 @@
             <ul class="nav-list">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="dark-mode-toggle">
-                <input type="checkbox" id="toggle-dark-mode">
-                <label for="toggle-dark-mode">Dark Mode</label>
-            </div>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="intro">
-            <h1 class="main-title">Hi, I'm <span class="typed-text"></span></h1>
-            <p class="subtitle">Crafting an innovative design to express in the immersive world</p>
-            <a href="#projects" class="cta-btn">Explore My Work</a>
-        </div>
-        <div class="profile-image">
-            <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/gokul.jpg" alt="Gokul" class="gokul-img">
-        </div>
-        
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
         <div class="container">
-            <h2>About Me</h2>
-            <p class="about-text"> Creative and detail-oriented UI/UX designer with a strong foundation
- in Figma and a proven ability to craft intuitive digital experiences.
- Skilled in AR/VR development with Unity, complemented by frontend
- expertise in React and backend integration. Currently building a
- diverse app design portfolio while actively pursuing opportunities in
- UI/UX design. Driven by a passion for innovation and user-centric
- solutions, eager to leverage and expand technical and creative skills
- for impactful contributions and career growth in the tech industry.</p>
-            <div class="skills-chart">
-                <canvas id="skillsChart"></canvas>
-            </div>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-figma"></i> UI/UX Design (Figma, Adobe XD)</li>
+                <li><i class="fab fa-react"></i> Frontend (ReactJS, HTML, CSS, JavaScript)</li>
+                <li><i class="fas fa-vr-cardboard"></i> AR/VR (Unity, Unreal Engine, Vuforia, ARCore)</li>
+                <li><i class="fas fa-server"></i> Backend (Node.js, MySQL, Firebase)</li>
+                <li><i class="fas fa-code"></i> Programming (Python, JavaScript, C#)</li>
+                <li><i class="fab fa-git-alt"></i> Version Control (Git, GitHub)</li>
+                <li><i class="fas fa-paint-brush"></i> Graphic Design (Blender, Photoshop)</li>
+            </ul>
         </div>
     </section>
 
@@ -62,42 +46,62 @@
         <div class="container">
             <h2>My Projects</h2>
             <div class="projects-container">
+                
+                <!-- Project 1 -->
                 <div class="project">
-                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project1.png" alt="Project 1">
+                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project1.png" alt="VR for Animal Learning">
                     <div class="project-info">
                         <h3>VR for Animal Learning</h3>
-                        <p>Developed a VR tour using Unreal Engine and HMDs to engage students in exploring realistic animal habitats. Features include lifelike animal interactions,and gamified learning for an interactive educational experience.</p>
+                        <p>Developed a VR tour using Unreal Engine and HMDs to explore realistic animal habitats.</p>
+                        <a href="DEMO_LINK_1" target="_blank" class="cta-btn">Demo</a>
+                        <a href="SOURCE_CODE_LINK_1" target="_blank" class="cta-btn">Source Code</a>
                     </div>
                 </div>
-                 <div class="project">
-                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_4.jpg" alt="Project 4">
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_4.jpg" alt="Contact Manager">
                     <div class="project-info">
                         <h3>Contact Manager</h3>
-                        <p>An web application developed using ReactJS and MySQL to efficiently organize and manage contact information. It features role-based access where the teachers can add, delete, and view student contacts, while students can only view and edit their own profiles. The system supports full CRUD operations and includes advanced search functionality, allowing users to quickly retrieve contacts based on specific criteria such as name, department, and domain.</p>
+                        <p>A web app using ReactJS and MySQL for organizing and managing contacts efficiently.</p>
+                        <a href="DEMO_LINK_2" target="_blank" class="cta-btn">Demo</a>
+                        <a href="SOURCE_CODE_LINK_2" target="_blank" class="cta-btn">Source Code</a>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
                 <div class="project">
-                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_5.png" alt="Project 2">
+                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_5.png" alt="Library Management">
                     <div class="project-info">
                         <h3>Library Management</h3>
-                        <p>A web application built with Python and MySQL to streamline book inventory management, user accounts, and transaction tracking. It offers features for borrowing, returning, and searching books, ensuring a user-friendly and responsive experience. The system was developed using Jupyter Notebook for efficient data processing and integration.</p>
+                        <p>A Python and MySQL-based system for managing book inventories and transactions.</p>
+                        <a href="DEMO_LINK_3" target="_blank" class="cta-btn">Demo</a>
+                        <a href="SOURCE_CODE_LINK_3" target="_blank" class="cta-btn">Source Code</a>
                     </div>
                 </div>
-                
+
+                <!-- Project 4 -->
                 <div class="project">
-                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_2.jpg" alt="Project 2">
+                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_2.jpg" alt="AR Education App">
                     <div class="project-info">
-                        <h3>AR Application for education</h3>
-                        <p>Our AR educational application utilizes Unity,Vuforia SDK and Blender to deliver immersive learning experiences of topics like science, space, English, insects, birds, and complex concepts like anatomy, the solar system,cells and chemical reactions engaging and accessible via mobile devices.</p>
+                        <h3>AR Application for Education</h3>
+                        <p>An AR-based learning app built with Unity and Vuforia for interactive education.</p>
+                        <a href="DEMO_LINK_4" target="_blank" class="cta-btn">Demo</a>
+                        <a href="SOURCE_CODE_LINK_4" target="_blank" class="cta-btn">Source Code</a>
                     </div>
                 </div>
+
+                <!-- Project 5 -->
                 <div class="project">
-                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_3.jpg" alt="Project 3">
+                    <img src="https://raw.githubusercontent.com/GokulRavi26/Portfolio/main/project_3.jpg" alt="Festival Face Filter">
                     <div class="project-info">
                         <h3>Festival Face Filter</h3>
-                        <p>A festival-themed face filter application using Unity and ARCore. The app includes interactive features for various festivals, such as Christmas, Diwali, and Halloween, providing users with immersive filters and festive effects.</p>
+                        <p>An AR face filter app using Unity and ARCore with interactive festival themes.</p>
+                        <a href="DEMO_LINK_5" target="_blank" class="cta-btn">Demo</a>
+                        <a href="SOURCE_CODE_LINK_5" target="_blank" class="cta-btn">Source Code</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -115,6 +119,7 @@
         </div>
     </section>
 
+    <!-- Social Media -->
     <section id="social-media" class="section social-media">
         <h2>Connect with Me</h2>
         <div class="social-links">
@@ -125,11 +130,8 @@
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://drive.google.com/file/d/1c3u9aafZ1fo9TBuaEP5WpFR5sJu8TkMr/view?usp=sharing" target="_blank" class="social-icon" title="Resume">
-    View Resume
-</a>
-
-            
-            
+                View Resume
+            </a>
         </div>
     </section>
 
