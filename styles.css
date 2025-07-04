@@ -372,3 +372,36 @@ header {
   width: 60px;  /* Adjust the size of the icons */
   height: 60PX;
 }
+.section.skills,
+.section.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.skills-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.section.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section.education li {
+    margin-bottom: 20px;
+}
