@@ -8,6 +8,8 @@ body {
 }
 
 /* Navbar */
+
+/* Reset & font */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Header styling */
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -23,21 +25,20 @@ header {
   z-index: 1000;
 }
 
-/* Navbar */
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #000000;
+  background: #111;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
 }
 
-/* Navigation links */
+/* Nav links */
 .nav-list {
   display: flex;
   gap: 25px;
@@ -53,16 +54,17 @@ header {
 }
 
 .nav-list li a:hover {
-  color: #000000;
+  color: #fff;
 }
 
-/* Hamburger Menu */
+/* Hamburger icon */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
   transition: 0.3s;
+  z-index: 1100; /* stays on top of menu */
 }
 
 .hamburger span {
@@ -73,20 +75,18 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Hamburger open state */
+/* Hamburger open animation */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Hide nav list on mobile by default */
+/* Responsive - mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -97,22 +97,28 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background: #000000;
     flex-direction: column;
     align-items: center;
+    background: #111;
     gap: 20px;
     padding: 20px 0;
-    display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
   }
 
   .nav-list.show {
-    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
@@ -1561,4 +1567,5 @@ header {
 .section.education li {
     margin-bottom: 20px;
 }
+
 
