@@ -135,7 +135,11 @@ header {
 
 /* Navigation Menu for Mobile */
 @media (max-width: 768px) {
-  .nav-links {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -151,15 +155,15 @@ header {
     transition: all 0.4s ease-in-out;
   }
 
-  .nav-links.active {
+  .nav-list.active {
     display: flex;
   }
 
-  .nav-links li {
+  .nav-list li {
     margin: 20px 0;
   }
 
-  .nav-links li a {
+  .nav-list li a {
     color: #ffcc00;
     font-size: 1.5rem;
     text-decoration: none;
@@ -167,10 +171,11 @@ header {
     transition: color 0.3s;
   }
 
-  .nav-links li a:hover {
+  .nav-list li a:hover {
     color: #fff;
   }
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -1623,4 +1628,5 @@ header {
 .section.education li {
     margin-bottom: 20px;
 }
+
 
