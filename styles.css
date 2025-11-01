@@ -58,8 +58,8 @@ header {
   color: #fff;
 }
 
-/* Hamburger menu (hidden on desktop) */
-.hamburger {
+/*Hamburger menu (hidden on desktop) 
+ .hamburger {
   display: none;
   flex-direction: column;
   gap: 6px;
@@ -81,7 +81,7 @@ header {
 }
 
 /* Hamburger animation */
-.hamburger.open span:nth-child(1) {
+/* .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 .hamburger.open span:nth-child(2) {
@@ -91,14 +91,14 @@ header {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Hover */
+/* Hover 
 .hamburger:hover {
   box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
   transform: scale(1.05);
 }
 
 /* MOBILE STYLING */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
@@ -106,7 +106,7 @@ header {
   .nav-list {
     position: fixed;
     top: 0;
-    left: -100%; /* <-- This hides it initially */
+    left: -100%; 
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.95);
@@ -120,14 +120,14 @@ header {
   }
 
   .nav-list.active {
-    left: 0; /* <-- Shown only when active */
+    left: 0; /* <-- Shown only when active 
   }
 
   .nav-list li a {
     font-size: 1.6rem;
     color: #ffcc00;
   }
-}
+} */
 
 
 
@@ -1582,3 +1582,4 @@ header {
 .section.education li {
     margin-bottom: 20px;
 }
+
