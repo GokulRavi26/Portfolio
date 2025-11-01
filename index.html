@@ -10,43 +10,29 @@
 </head>
 
 <body>
-    <!-- Nav Section -->
+    <!-- Navbar -->
   <header>
-  <nav class="navbar">
-    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <nav class="navbar">
+      <!-- Navigation Links -->
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#skills" class="nav-link">SKILLS</a></li>
+        <li><a href="#education" class="nav-link">EDUCATION</a></li>
+        <li><a href="#internships" class="nav-link">INTERNSHIPS</a></li>
+        <li><a href="#achievements" class="nav-link">ACHIEVEMENTS</a></li>
+        <li><a href="#certifications" class="nav-link">CERTIFICATIONS</a></li>
+        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+      </ul>
 
-    <ul class="nav-list" id="nav-list">
-      <li><a href="#home" class="nav-link">HOME</a></li>
-      <li><a href="#about" class="nav-link">ABOUT</a></li>
-      <li><a href="#skills" class="nav-link">SKILLS</a></li>
-      <li><a href="#education" class="nav-link">EDUCATION</a></li>
-      <li><a href="#internships" class="nav-link">INTERNSHIPS</a></li>
-      <li><a href="#achievements" class="nav-link">ACHIEVEMENTS</a></li>
-      <li><a href="#certifications" class="nav-link">CERTIFICATIONS</a></li>
-      <li><a href="#projects" class="nav-link">PROJECTS</a></li>
-    </ul>
-  </nav>
-</header>
-
-<script>
-  const menuIcon = document.getElementById("menu-icon");
-  const navList = document.getElementById("nav-list");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  // Toggle menu visibility
-  menuIcon.addEventListener("click", () => {
-    navList.classList.toggle("show");
-    menuIcon.textContent = navList.classList.contains("show") ? "✖" : "☰";
-  });
-
-  // Close menu when any link is clicked
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navList.classList.remove("show");
-      menuIcon.textContent = "☰";
-    });
-  });
-</script>
+      <!-- Hamburger (mobile only) -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
 
     <!-- Home Section -->
@@ -640,6 +626,3 @@
     <script src="app.js"></script>
 </body>
 </html>
-
-
-
