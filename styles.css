@@ -7,8 +7,9 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar Base */
-*{
+
+/* Reset and base styling */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,12 +32,13 @@ header {
   width: 100%;
 }
 
-/* Menu icon (hidden by default) */
+/* Menu icon (hidden on desktop) */
 .menu-icon {
   display: none;
-  font-size: 28px;
+  font-size: 30px;
   color: #ffcc00;
   cursor: pointer;
+  user-select: none;
 }
 
 /* Navigation list */
@@ -57,7 +59,7 @@ header {
   color: #fff;
 }
 
-/* Responsive for mobile */
+/* Mobile view */
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
@@ -84,15 +86,12 @@ header {
   .nav-list.show {
     display: flex;
   }
-
-  .nav-list li a {
-    font-size: 1rem;
-  }
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
@@ -1541,6 +1540,7 @@ header {
 .section.education li {
     margin-bottom: 20px;
 }
+
 
 
 
