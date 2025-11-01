@@ -1,12 +1,20 @@
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
+const navLinks = document.querySelectorAll('.nav-link');
 
+// Toggle menu open/close
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   navList.classList.toggle('show');
 });
 
-
+// Close menu when clicking a link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navList.classList.remove('show');
+  });
+});
 
 // ----- Typed Text -----
 const roles = ["AR/VR Enthusiast...","Unity Developer...","UI/UX Designer...","FullStack Developer..."];
@@ -294,5 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
  document.getElementById("scrollTopBtn").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
 
 
