@@ -1,18 +1,8 @@
-  const hamburger = document.querySelector(".hamburger");
-  const navList = document.querySelector(".nav-list");
+const menuIcon = document.getElementById("menu-icon");
+  const navList = document.getElementById("nav-list");
 
-  // Toggle menu open/close
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    navList.classList.toggle("active");
-  });
-
-  // Close menu when clicking a nav link
-  document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-      hamburger.classList.remove("open");
-      navList.classList.remove("active");
-    });
+  menuIcon.addEventListener("click", () => {
+    navList.classList.toggle("show");
   });
 
 
@@ -304,3 +294,4 @@ document.addEventListener('DOMContentLoaded', () => {
  document.getElementById("scrollTopBtn").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
