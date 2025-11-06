@@ -62,14 +62,14 @@ function animateParticles(){
     if(p.x>canvas.width)p.x=0; if(p.x<0)p.x=canvas.width;
     if(p.y>canvas.height)p.y=0; if(p.y<0)p.y=canvas.height;
 
-    // Mouse repel
-    // if(mouse.x && mouse.y){
-    //   const dx=p.x-mouse.x, dy=p.y-mouse.y;
-    //   const dist=Math.hypot(dx,dy);
-    //   if(dist<100){ const angle=Math.atan2(dy,dx); const force=(100-dist)/100*2;
-    //     p.vx+=Math.cos(angle)*force; p.vy+=Math.sin(angle)*force;
-    //   }
-    // }
+    Mouse repel
+    if(mouse.x && mouse.y){
+      const dx=p.x-mouse.x, dy=p.y-mouse.y;
+      const dist=Math.hypot(dx,dy);
+      if(dist<100){ const angle=Math.atan2(dy,dx); const force=(100-dist)/100*2;
+        p.vx+=Math.cos(angle)*force; p.vy+=Math.sin(angle)*force;
+      }
+    }
 
     // Draw particle
     ctx.beginPath();
@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
  document.getElementById("scrollTopBtn").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
 
 
 
