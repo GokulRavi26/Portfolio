@@ -17,7 +17,7 @@ navLinks.forEach(link => {
 });
 
 // ----- Typed Text -----
-const roles = ["AR/VR Enthusiast...","Unity Developer...","UI/UX Designer...","FullStack Developer..."];
+const roles = ["XR Developer...","Digital Twin Developer...","Unity Developer...","Frontend Developer..."];
 const typedTextSpan = document.querySelector(".typed-text");
 let roleIndex=0,charIndex=0,isDeleting=false;
 
@@ -302,8 +302,3 @@ document.addEventListener('DOMContentLoaded', () => {
  document.getElementById("scrollTopBtn").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
-
-
-
-
